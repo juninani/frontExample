@@ -1,0 +1,17 @@
+h1[title]{
+    color:plum;
+}
+#heading{
+    color:red;
+}
+
+body >p {
+    color:palegoldenrod;
+}
+
+body li{
+    color:orange;
+}
+
+
+
