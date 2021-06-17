@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <style>
+        .header {
+            height: 100px;
+            position: relative;
+        }
+
+        .header h1 {
+            position: absolute;
+            left: 10px;
+            top: 30px;
+        }
+
+        .gnb {
+            position: absolute;
+            right: 0;
+            top: 0px;
+        }
+
+        .lnb {
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+        }
+
+        ul {
+            overflow: hidden;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .container div {
+            box-sizing: border-box;
+            border: 1px black solid;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .content {
+            overflow: hidden;
+        }
+
+        .section {
+            width: 700px;
+            float: left;
+        }
+
+        .aside {
+            width: 250px;
+            float: right;
+        }
+
+        input {
+            display: none;
+        }
+
+        input:nth-of-type(1)~div:nth-of-type(1) {
+            display: none;
+        }
+
+        input:nth-of-type(2)~div:nth-of-type(2) {
+            display: none;
+        }
+
+        input:nth-of-type(1):checked~div:nth-of-type(1) {
+            display: block;
+        }
+
+        input:nth-of-type(2):checked~div:nth-of-type(2) {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>html+css 연습중</h1>
+            <nav class="lnb">
+                <ul>
+                    <li>lnb test</li>
+                    <li>lnb test</li>
+                    <li>lnb test</li>
+                    <li>lnb test</li>
+                    <li>lnb test</li>
+                </ul>
+            </nav>
+            <nav class="gnb">
+                <ul>
+                    <li>gnb test</li>
+                    <li>gnb test</li>
+                    <li>gnb test</li>
+                    <li>gnb test</li>
+                    <li>gnb test</li>
+                    <li>gnb test</li>
+                    <li>gnb test</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <article>
+                    <h1>Velit do fugiat dolor amet labore labore veniam ea ipsum.</h1>
+                    <p>Non culpa mollit veniam laborum id mollit.</p>
+                    <p>Dolor irure irure quis officia adipisicing.</p>
+                    <p>Qui minim et aliquip officia enim exercitation sint amet ea.</p>
+                    <p>Non culpa mollit veniam laborum id mollit.</p>
+                    <p>Dolor irure irure quis officia adipisicing.</p>
+                    <p>Qui minim et aliquip officia enim exercitation sint amet ea.</p>
+                    <p>Non culpa mollit veniam laborum id mollit.</p>
+                    <p>Dolor irure irure quis officia adipisicing.</p>
+                    <p>Qui minim et aliquip officia enim exercitation sint amet ea.</p>
+                    <p>Non culpa mollit veniam laborum id mollit.</p>
+                    <p>Dolor irure irure quis officia adipisicing.</p>
+                    <p>Qui minim et aliquip officia enim exercitation sint amet ea.</p>
+                    <p>Non culpa mollit veniam laborum id mollit.</p>
+                    <p>Dolor irure irure quis officia adipisicing.</p>
+                    <p>Qui minim et aliquip officia enim exercitation sint amet ea.</p>
+                    <p>Non culpa mollit veniam laborum id mollit.</p>
+                    <p>Dolor irure irure quis officia adipisicing.</p>
+                    <p>Qui minim et aliquip officia enim exercitation sint amet ea.</p>
+
+
+                </article>
+            </div>
+            <div class="aside">
+                <label for="tab-1">TAP1</label>
+                <label for="tab-2">TAP2</label>
+                <input type="radio" name="tap" id="tab-1" checked="checked">
+                <input type="radio" name="tap" id="tab-2">
+                <div class="tab-item">Incididunt eu irure id deserunt sunt velit et exercitation aute quis. Aute ea sint
+                    elit reprehenderit occaecat. Excepteur aute consectetur sunt occaecat. Id voluptate veniam sit
+                    aliqua sit officia non adipisicing deserunt officia cupidatat. Do cillum voluptate nostrud
+                    consectetur Lorem Lorem non. Ipsum occaecat incididunt voluptate consectetur adipisicing. Amet ad
+                    non officia Lorem ut fugiat fugiat culpa aliquip nulla consequat ipsum eiusmod.
+
+                    Deserunt ipsum ut sint et duis ipsum consequat dolor eiusmod. Qui fugiat in mollit officia qui do
+                    eiusmod aliqua et ut. Sint excepteur ea irure ea consequat ea exercitation minim dolor aute irure
+                    exercitation nulla. In pariatur anim consequat consequat velit culpa nulla ut dolor reprehenderit
+                    nostrud irure mollit proident. Consectetur cupidatat nostrud laborum nisi commodo adipisicing do ut.
+
+                    Tempor amet duis esse aliquip ut adipisicing laborum. Aliquip eiusmod est ut labore Lorem
+                    exercitation et amet officia nulla velit. Labore exercitation irure esse sint ipsum aliquip
+                    excepteur dolor et labore duis. Irure proident laborum nostrud minim consectetur aute.
+
+                    Minim aliquip dolore minim id enim quis consequat qui culpa ea. Non est irure magna quis
+                    exercitation id ut ipsum. Qui occaecat et nulla amet sunt adipisicing aute. Labore duis id voluptate
+                    commodo id. Dolor nostrud anim in quis do mollit Lorem deserunt eiusmod dolore.
+
+                    Laboris non mollit et officia ex consequat qui occaecat pariatur mollit. Reprehenderit eu
+                    reprehenderit consectetur velit. Culpa dolore culpa ea consequat elit dolore consequat in magna
+                    proident. Consectetur deserunt dolore amet eiusmod dolor voluptate aute consequat laborum irure.
+                </div>
+                <div class="tab-item">Culpa commodo duis ad laborum. Et culpa aliqua do veniam magna. Aliqua dolor
+                    excepteur consequat laboris exercitation amet irure officia laboris tempor. Dolor sint deserunt
+                    excepteur aliquip qui fugiat adipisicing. Sint qui enim amet officia sunt adipisicing irure nulla
+                    officia est. Ex quis non non fugiat nostrud fugiat pariatur Lorem nulla ea exercitation elit velit
+                    incididunt. Minim elit in ut commodo in officia ad.
+
+                    Quis consectetur do esse in sit sit. Aliqua ut labore pariatur eiusmod sint do. Excepteur minim elit
+                    culpa velit adipisicing esse est consectetur sunt Lorem tempor. Sunt occaecat adipisicing mollit sit
+                    ut do in. Id elit do laborum occaecat anim eu veniam. Aliqua amet incididunt mollit sunt mollit
+                    veniam ut. Laborum cupidatat labore mollit ipsum cupidatat Lorem veniam ullamco in.
+
+                    Nulla eiusmod culpa laborum incididunt pariatur. Do pariatur exercitation nostrud occaecat
+                    adipisicing et qui voluptate duis Lorem veniam. Ea incididunt ut Lorem sunt exercitation ea
+                    adipisicing. Sunt magna dolore minim in. Quis anim sunt ut labore quis. Nostrud deserunt anim ea in
+                    sint est cillum irure fugiat culpa reprehenderit sunt laborum.
+
+                    Duis in quis aute minim et elit velit commodo est adipisicing proident. Commodo reprehenderit
+                    occaecat minim reprehenderit sint nulla et laborum sit id veniam adipisicing ea. Magna nostrud amet
+                    veniam Lorem sunt magna commodo ut exercitation consectetur. Irure duis incididunt aute elit veniam.
+                    Ad laborum ipsum non tempor do.
+
+                    Proident non commodo qui elit consectetur incididunt aliquip enim amet. Velit tempor veniam ut
+                    tempor occaecat eu nisi culpa tempor do. Voluptate magna mollit mollit sunt veniam ullamco ad et
+                    irure duis et non. Duis incididunt cupidatat irure esse non nisi cupidatat pariatur id consequat
+                    deserunt ad quis.</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Laborum est quis exercitation voluptate et dolore irure qui cupidatat.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
