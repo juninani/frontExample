@@ -1,0 +1,38 @@
+<div class="wrap">
+    <div class="box"></div>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background-color: red;
+            position: absolute;
+        }
+        .wrap{
+            position:relative;
+        }
+    </style>
+</div>
+
+<style>
+    .box{
+        animation-name:이름;
+        animation-duration: 4s;
+        animation-fill-mode:both; /*애니메이션 위치*/
+        animation-direction:alternate-reverse;/*애니메이션 방향성*/
+        animation-iteration-count: infinite;/*횟수*/
+        /*animation-delay:2s;
+        animation-timing-function: ease;
+        animation-play-state: paused; 자바스크립트로 조절*/
+    }
+
+    @keyFrames 이름{
+        0%{
+            left:0;
+            top:0;
+        }
+        100%{
+            left:200px;
+            top:200px;
+        }
+    }
+</style>
